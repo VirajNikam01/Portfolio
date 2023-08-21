@@ -9,11 +9,15 @@
 html,body{
     height: 100%;
     width: 100%;
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
 }
 #page1{
-    position: relative;
+    /* position: relative; */
     height: 100vh;
+    width: 100%;
+}
+#main{
+    height: 100%;
     width: 100%;
 }
 #nav{
@@ -89,7 +93,7 @@ html,body{
    font-size: 15px;
 }
 #page2{
-    position: relative;
+    /* position: relative; */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -142,9 +146,10 @@ html,body{
     display: flex;
     align-items: center;
     justify-content: space-around;
+    flex-wrap: wrap;
     width: 100%;
-    height: 250px;
     padding-top: 40px;
+    text-align: center;
 }
 #card1{
     width: 30%;
@@ -185,4 +190,104 @@ html,body{
 #rightftr a {
     text-decoration: none;
     font-size: 15px;
+    
+}
+
+
+
+
+
+
+
+
+
+@media (max-width: 1000px){
+    #content h1{
+        font-size: 100px;
+    }
+}
+
+
+
+
+@media (max-width: 768px){
+    *{
+
+        /* background-color: rgb(122, 42, 49); */
+    }
+    #nav{
+        padding: 0px 20px;
+        width: 100%;
+    }
+    #n1,#n2{
+        display: none;
+    }
+    #page1{
+        height: fit-content;
+        width: 100%;
+    }
+    #content{
+        width: 100%;
+        height: fit-content;
+        padding: 20px 20px;
+        /* background-color: #000; */
+    }
+    #content h1{
+        font-size: 40px;
+    }
+    #history{
+        display:none
+    }
+    #page2{
+        height: fit-content;
+        width: 100%;
+    }
+  
+    #page2 #about{
+        flex-direction: column;
+        text-align: center;
+       }
+       #txt{
+        padding: 10px 20px;
+        width: 100%;
+    }
+    #txt p{
+        padding-bottom: 20px;
+    }
+
+    #content{
+        width: 100%;
+    }
+    #about img{
+        height: 150px;
+        width: 150px;
+    }
+    #work{
+        border-top: 1px solid #ffff;
+        padding-top: 10px;
+        flex-direction: column;
+    }
+    #work h3{
+        letter-spacing: 2px;
+    }
+    #card1{
+        margin: 10px;
+        padding: 10px;
+        width: 90%;
+        height: 30px;
+    }
+    #card2{
+        margin: 10px;
+        padding: 10px;
+        width: 90%;
+        height: 30px;
+    }
+    #card3{
+        margin: 10px;
+        padding: 10px;
+        width: 90%;
+        height: 30px;
+       
+    }
+ 
 }
