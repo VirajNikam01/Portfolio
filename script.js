@@ -32,16 +32,20 @@ tl.from("#history i",{
 })
 tl.from("#about",{
     scale:0,
-    opacity:0,
-    duration:0.5
+    opacity:0
 })
 tl.from("#work h3",{
     scale:0,
     opacity:0,
-    duration:0.5
 })
+
 tl.from("#cards",{
-    x:-100,
     opacity:0,
-    duration:0.5
+    x:-1000,
+    duraion:1,
+    scrollTrigger:{
+        trigger:"#cards",
+        scroller:"body",
+
+    }
 })

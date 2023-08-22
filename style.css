@@ -134,7 +134,8 @@ html,body{
     font-size: 15px;
 }
 #txt p{
-    color: #dadada;
+    color: #dadadad0;
+    font-family: 'Times New Roman', Times, serif !important;
 }
 #work{
     display: flex;
