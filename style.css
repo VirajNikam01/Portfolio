@@ -17,6 +17,7 @@ html,body{
     border-radius: 50%;
     background-color: #dadada;
     position: fixed;
+    z-index: 99;
 }
 #page1{
     /* position: relative; */

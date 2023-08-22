@@ -42,10 +42,6 @@ tl.from("#work h3",{
 tl.from("#cards",{
     opacity:0,
     x:-1000,
-    duraion:1,
-    scrollTrigger:{
-        trigger:"#cards",
-        scroller:"body",
+    duraion:0.5,
 
-    }
 })
