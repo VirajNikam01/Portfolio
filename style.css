@@ -1,16 +1,94 @@
+@font-face {
+    font-family: Moranga;
+    src: url(./Fonts/moranga.ttf);
+}
+@font-face {
+    font-family: Gilroy;
+    src: url(./Fonts/Gilroy-Bold.otf);
+}
+@font-face {
+    font-family: Gilroy;
+    src: url(./Fonts/Gilroy-Semibold.otf);
+}
+@font-face {
+    font-family: Gilroy;
+    src: url(./Fonts/Gilroy-Medium.otf);
+}
+          
+          
+          /* Boilerplate */
+
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     color: #ffff;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #000;
 }
 html,body{
     height: 100%;
     width: 100%;
     overflow-x: hidden;
+    background-color: #000;
 }
+
+
+
+            /* Navigation Bar */
+
+
+
+#nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 100px;
+    padding: 0px 40px;
+}
+#nav a{
+    text-decoration: none;
+}
+#nav h3{
+    letter-spacing: 5px;
+    font-size: 30px;
+    color: rosybrown;
+    font-family: "Moranga";
+}
+.resume-btn {
+    right: 2vmax;
+    top: 1vmax;
+    z-index: 1111;
+    padding: .9vmax 1.5vmax;
+    border-radius: 5vmax;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 0 1vmax #FC626A;
+    background: linear-gradient(to right, #FE7D84, #FC626A);
+    box-shadow: 0 0 0.8vmax #49bff6;
+    background: linear-gradient(to right, #45d6e7, #38cdfa);
+    transition: 0.5s all;
+    cursor: pointer;
+}
+
+.resume-btn a {
+    font-size: 1.1vmax;
+    background-color: inherit;
+    font-family: gilroy;
+    font-weight: 600;
+}
+
+
+
+
+
+              /* MouseMoving Animation */
+
+
+
 #curser{
     height: 15px;
     width: 15px;
@@ -19,69 +97,57 @@ html,body{
     position: fixed;
     z-index: 99;
 }
+
+
+                /* CSS for page1 */
+
+
+
 #page1{
-    /* position: relative; */
-    height: 100vh;
-    width: 100%;
-}
-#main{
-    height: 100%;
-    width: 100%;
-}
-#nav{
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: space-between;
+    /* position: relative; */
+    height: calc(100vh - 100px);
     width: 100%;
-    height: 60px;
-    padding: 0px 40px;
+    padding: 30px;
 }
-#nav a{
-    text-decoration: none;
-}
-#nav h3{
-    letter-spacing: 3px;
-    color: #dadadabe;
-    font-family: 'Times New Roman', Times, serif;
-}
-#navbar{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10vw;
-    padding-top: 10px;
-}
-#navbar a{
-    color: #ffffffcb;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-size: 15px;
+#page1 img{
+    border-radius: 50%;
+    height: 200px;
+    width: 200px;
+    filter: brightness(0.7);
 }
 #content{
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 100%;
-    height: calc(100vh - 70px - 60px);
+
 }
 #content h1{
+    font-family: "Moranga";
+    letter-spacing: 0.5vw;
     text-transform: uppercase;
     font-size: 120px;
+    line-height: 9vw;
     font-weight: 800;
-    word-spacing: 30px;
-    letter-spacing: 10px;
     text-align: center;
-    color: #dadada;
+    color: #dadadac9;
+}
+h1 span{
+    color: rosybrown;
 }
 #history{
-    position: relative;
-    padding: 10px;
+  position: relative;
   display: flex;
   justify-content: space-between;
   align-items: end;
   height: 60px;
   width: 100%;
   color: #dadadac2;
+  font-family: "Gilroy";
+  
 }
 #history .circle{
     display: flex;
@@ -103,85 +169,89 @@ html,body{
    text-transform: uppercase;
    font-size: 15px;
 }
+
+
+
+                /* css for page 2 */
+
+
+
+
 #page2{
     /* position: relative; */
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    height: 150vh;
+    height: 100vh;
     width: 100%;
     
 }
-#page2 img{
-    border-radius: 50%;
-    height: 200px;
-    width: 200px;
-    filter: brightness(0.7);
-}
 #page2 #about{
- display: flex;
- align-items: center;
- justify-content: center;
- 
+    padding: 100px;
+    font-family: "Moranga";
 }
-#txt{
-    padding: 0px 30px;
-    width: 50%;
-}
-#txt h6{
-    text-transform: lowercase;
-    color: #dadadac2;
-    font-size: 15px;
-}
-#txt p{
-    color: #dadadad0;
-    font-family: 'Times New Roman', Times, serif !important;
-}
-#work{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    /* background-color: red; */
-    padding-top: 100px;
-    width: 100%;
-}
-#work h3{
-    text-align: center;
-    text-transform: uppercase;
-    font-size: 40px;
-    letter-spacing: 40px;
-    color: #dadada;
-}
-#cards{
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    width: 100%;
-    height: 40vh;
-    padding-top: 30px;
+#page2 p{
+    font-size: 50px;
+    color: #dadadabc;
     text-align: center;
 }
-.samecard{
+
+
+
+
+            /* css for page 3 */
+
+     
+            
+#page3{
+    background-color: #000000d8 !important;
+    height: 100vh;
+    padding: 30px 50px;
+    font-family: "Gilroy";
+}
+#page3 h3{
+    font-size: 60px;
+    word-spacing: 5px;
+}
+h3 span{
+    color: rgb(4, 252, 169);
+}
+#page3 h5{
+    font-size: 30px;
+}
+.box{
+    padding-top: 50px;
+}
+
+.box h4{
+    font-size: 30px;
+    border: 2px solid #ffff;
+    width: fit-content;
+    font-weight: 400;
+    padding: 9px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+.elem-div{
     display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 30%;
-    height: 100%;
-    border: 2px solid rgb(255, 255, 255);
-    transition: all ease 1s;
+    gap: 15px;
+    flex-wrap: wrap;
 }
-.samecard a{
-    text-decoration: none;
-    cursor: pointer;
-    font-size: 25px;
-    transition: all ease 1s;
+
+
+.elem-div img{
+    height: 100px;
+    background: #fff;
+    border-radius: 10px;
+    padding: 10px 5px;
 }
-.samecard:hover a, .samecard:hover{
-    background-color: #dadada;
-    color: #000;
-}
+
+
+
+
+
+
 
 #footer{
     display: flex;
@@ -191,6 +261,7 @@ html,body{
     width: 100%;
     padding: 0px 2vw;
     padding-bottom: 30px;
+    font-family: "Gilroy";
 }
 #leftftr{
     display: flex;
@@ -215,6 +286,7 @@ html,body{
 
 
 
+        /* Responsiveness for page 1 */
 
 
 @media (max-width: 1000px){
@@ -224,76 +296,107 @@ html,body{
 }
 
 
+        /* Universal Resposiveness */
+
+
 @media (max-width: 768px){
 
+
     #nav{
-        padding: 0px 20px;
+        padding:20px;
         width: 100%;
+        height: fit-content;
+    }
+    #nav h3{
+        word-spacing: 0px;
+        font-size: 15px;
     }
     #curser{
         display: none;
     }
-    #n1,#n2{
-        display: none;
-    }
+
+
+
+
+    /* Responsive page 1 */
+
+
+
     #page1{
         height: fit-content;
         width: 100%;
     }
     #content{
         width: 100%;
-        height: fit-content;
         padding: 20px 20px;
         /* background-color: #000; */
     }
     #content h1{
-        font-size: 40px;
+        font-size: 50px;
+        line-height: 45px;
     }
     #history{
         display:none
     }
+
+
+
+    /* Responsive Page 2 */
+
+
+
+
     #page2{
-        height: 100vh;
-        width: 100%;
+        height: fit-content;
+        padding-bottom: 15px;
     }
-  
     #page2 #about{
-        flex-direction: column;
-        text-align: center;
-       }
-       #txt{
-        padding: 10px 20px;
-        width: 100%;
+        padding: 0px 5px;
     }
-    #txt p{
-        padding-bottom: 20px;
+    #about p{
+       font-size: 20px;
     }
 
-    #content{
-        width: 100%;
+
+
+    /* responsive for page3 */
+
+
+    #page3{
+        height: fit-content;
+        padding: 15px 30px;
     }
-    #about img{
-        height: 150px;
-        width: 150px;
+    #page3 h3{
+        font-size: 40px;
+        padding-bottom: 10px;
     }
-    #work{
-        padding-top: 10px;
-        flex-direction: column;
+    #page3 h5{
+        font-size: 20px;
     }
-    #work h3{
-        border-top: 1px solid #ffff;
-        padding-top: 20px;
-        letter-spacing: 2px;
+    .box{
+        padding-top: 25px;
     }
-    #cards{
-        flex-direction: column;
-        padding-top: 10px;
+    .box h4{
+        font-size: 20px;
+        padding: 9px;
+        margin-bottom: 20px;
     }
-    .samecard{
-        margin: 10px;
-        padding: 10px;
-        width: 90%;
+
+    .elem-div img{
+        height: 80px;
+        background: #fff;
+        border-radius: 10px;
+        padding: 7px 4px;
     }
+
+
+
+        /* responsive for footer */
+
+        #footer{
+            padding-bottom: 10px;
+        }
+
 
  
 }
