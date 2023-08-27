@@ -4,7 +4,18 @@ function loco() {
         smooth: true
     });
 }
+
+   var load = document.querySelector("#pageload");
+   window.addEventListener("load",function(){
+      load.style.display = "none";
+   })
+   
+
+
 loco()
+
+
+
 
 
 var crsr = document.querySelector("#curser");
