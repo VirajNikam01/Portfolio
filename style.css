@@ -79,10 +79,10 @@ html,body{
     cursor: pointer;
     display: flex;
     align-items: center;
-    box-shadow: 0 0 1vmax #FC626A;
-    background: linear-gradient(to right, #FE7D84, #FC626A);
-    box-shadow: 0 0 0.8vmax #49bff6;
-    background: linear-gradient(to right, #45d6e7, #38cdfa);
+    box-shadow: 0 0 1vmax #62f4fc;
+    background: linear-gradient(to right, #7dfef8, #62fcfc);
+    box-shadow: 0 0 0.8vmax #49f6c5;
+    background: linear-gradient(to right, #45e7cc, #38fac6);
     transition: 0.5s all;
     cursor: pointer;
 }
@@ -300,7 +300,6 @@ h3 span{
     }
 }
 
-
         /* Universal Resposiveness */
 
 
@@ -348,6 +347,7 @@ h3 span{
     }
     #history p{
         font-family: "Gilroy";
+        width: 100%;
         text-align: center;
     }
 
