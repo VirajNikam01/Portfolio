@@ -84,7 +84,6 @@ html,body{
     box-shadow: 0 0 0.8vmax #49f6c5;
     background: linear-gradient(to right, #45e7cc, #38fac6);
     transition: 0.5s all;
-    cursor: pointer;
 }
 
 .resume-btn a {
@@ -103,12 +102,13 @@ html,body{
 
 
 #curser{
-    height: 15px;
-    width: 15px;
+    height: 25px;
+    width: 25px;
     border-radius: 50%;
     background-color: #dadada;
     position: fixed;
-    z-index: 99;
+    z-index: 1;
+    mix-blend-mode: difference;
 }
 
 
@@ -131,6 +131,8 @@ html,body{
     height: 200px;
     width: 200px;
     filter: brightness(0.8);
+    cursor: pointer;
+    /* border: 6px solid cornsilk; */
 }
 #content{
     display: flex;
@@ -297,6 +299,18 @@ h3 span{
 @media (max-width: 1000px){
     #content h1{
         font-size: 100px;
+    }
+    #page1{
+        height: fit-content;
+    }
+    #page1 h1{
+        /* padding: 20px 0px; */
+    }
+    #page2{
+        height: fit-content;
+    }
+    #page3{
+        height: fit-content;
     }
 }
 

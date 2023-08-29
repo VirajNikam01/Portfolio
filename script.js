@@ -45,12 +45,16 @@ loco()
 
 
 var crsr = document.querySelector("#curser");
-
 document.addEventListener("mousemove", function(details){
 
     crsr.style.left = details.x+"px";
     crsr.style.top = details.y+"px";
 })
+
+
+
+
+
 
 var tl = gsap.timeline()
 
@@ -91,7 +95,7 @@ gsap.from("#page1 img",{
  })
  tl.from("#page2 p",{
     opacity:0,
-    y:1000,
+    y:100,
     stagger:0.1
  })
 
