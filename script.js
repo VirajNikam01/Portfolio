@@ -31,10 +31,10 @@ function loco() {
    
 }
 
-   var load = document.querySelector("#pageload");
-   window.addEventListener("load",function(){
-      load.style.display = "none";
-   })
+   // var load = document.querySelector("#pageload");
+   // window.addEventListener("load",function(){
+   //    load.style.display = "none";
+   // })
    
 
 
