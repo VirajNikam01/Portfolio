@@ -294,20 +294,21 @@ h3 span{
     border-bottom: 2px solid #ffffff;
     padding: 30px 0px;
     border-radius: 5px;
-    transition: all ease-out 0.3s;
+    transition: 3s;
 }
 .row h3{
     font-family: 'moranga';
     font-weight: 100;
     color: #dadada;
     font-size: 30px;
+    transition: 3s;
 }
 .row i{
     font-weight: 100;
     font-size: 30px;
 }
-.row:hover{
-    background-color: rgba(0, 255, 255, 0.226);
+.row:hover h3{
+    text-decoration: underline;
 }
 
 
