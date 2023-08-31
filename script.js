@@ -41,9 +41,6 @@ function loco() {
 loco()
 
 
-
-
-
 var crsr = document.querySelector("#curser");
 document.addEventListener("mousemove", function(details){
 
