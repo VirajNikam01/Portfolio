@@ -151,7 +151,7 @@ html,body{
     color: #ffffff;
 }
 h1 span{
-    color: teal;
+    color: #71edffb5;
 }
 #history{
   position: relative;
@@ -289,25 +289,18 @@ h3 span{
 #page4 .row{
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     width: 100%;
     border-bottom: 2px solid #ffffff;
     padding: 30px 0px;
-    border-radius: 5px;
-    transition: 3s;
-}
-.row h3{
-    font-family: 'moranga';
-    font-weight: 100;
-    color: #dadada;
-    font-size: 30px;
+    /* border-radius: 5px; */
     transition: 3s;
 }
 .row i{
     font-weight: 100;
     font-size: 30px;
 }
-.row:hover h3{
+.row:hover a{
     text-decoration: underline;
 }
 
