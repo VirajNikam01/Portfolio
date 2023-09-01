@@ -79,10 +79,10 @@ html,body{
     cursor: pointer;
     display: flex;
     align-items: center;
-    box-shadow: 0 0 1vmax #62f4fc;
-    background: linear-gradient(to right, #7dfef8, #62fcfc);
-    box-shadow: 0 0 0.8vmax #49f6c5;
-    background: linear-gradient(to right, #45e7cc, #38fac6);
+    box-shadow: 0 0 1vmax #00f0fc;
+    background: linear-gradient(to right, #7dfef8, #0ce6e6);
+    box-shadow: 0 0 0.8vmax #1fa4c2;
+    background: linear-gradient(to right, #1e6893, #236789);
     transition: 0.5s all;
 }
 
