@@ -461,14 +461,15 @@ h3 span{
         height: fit-content;
     }
     #page4 h2{
-        font-size: 30px;
+        font-size: 35px;
         padding-bottom: 10px;
     }
     .row{
-        padding: 20px 0px;
+        padding: 5px 0px;
     }
-    .row h3{
-        font-size: 20px;
+    .row a{
+        font-family: 'Gilroy-Semibold' !important;
+        font-size: 23px;
     }
 
 
