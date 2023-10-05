@@ -30,7 +30,7 @@ function loco() {
    ScrollTrigger.refresh();
    
 }
-loco()
+
 
 
 var crsr = document.querySelector("#curser");
@@ -40,45 +40,95 @@ document.addEventListener("mousemove", function(details){
     crsr.style.top = details.y+"px";
 })
 
-var tl = gsap.timeline()
 
-tl.from("#nav button, #nav h3",{
-    opacity:0,
-   y:-1000,
-    duration:0.8
- })
-tl.from("#page1 img",{
-   opacity:0,
-   duration:0.2
+var navbtn = document.querySelector("nav label i")
+var nav = document.querySelector("nav")
+
+var flag =0;
+
+navbtn.addEventListener("click", ()=>{
+    if(flag == 0){
+      nav.style.backgroundColor= "black"
+      nav.style.transition= "all 0.9s";
+      flag= 1
+    }
+    else{
+      nav.style.backgroundColor = "transparent"
+      nav.style.transition= "all 0.9s";
+      flag = 0
+    }
 })
- tl.from("#page1 h1",{
-    opacity:0,
-    scale:0,
-    duration:0.5
- })
- tl.from("#page1 span",{
-    opacity:0,
- })
- tl.from("#history",{
-    opacity:0,
-    y:100
- })
- tl.from("#history i",{
-    opacity:0,
-    y:-10,
-    repeat:-1,
-    yoyo:true
- })
- tl.from("#page2 p",{
-    opacity:0,
-    y:100,
-    stagger:0.1
- })
+
+// +++++++++++++++++++++++++++++++++++++++++++++++++++ logo disable on scroll down ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+var logo = document.querySelector("label span")
+gsap.to(logo,{
+  opacity:0,
+  scrollTrigger:{
+    scroller:"body",
+    target:"nav",
+    start: "top -5%",
+    end:"top 0%",
+    scrub:true
+  }
+})
+
+
+
+
+
+
 
 
  //+++++++++++++++++++++++++++++++++++++++++ For Color Changing Background ++++++++++++++++++++++++++++++++++++++++++
 
 
 
+//  const throttleFunction = (func, delay) => {
+//   let prev = 0;
+//   return (...args) => {
+//     let now = new Date().getTime();
+
+//     if (now - prev > delay) {
+//       prev = now;
+//       return func(...args);
+//     }
+//   };
+// };
+// document.querySelector("h1").addEventListener(
+//   "mousemove",
+//   throttleFunction((dets) => {
+//     const div = document.createElement("div");
+//     div.classList.add("imagediv");
+//     div.style.left = dets.clientX + "px";
+//     div.style.top = dets.clientY + "px";
+
+//     const img = document.createElement("img");
+//     img.setAttribute(
+//       "src",
+//       "./img/walpaper.png"
+//     );
+
+//     div.appendChild(img)
+
+//     document.body.appendChild(div);
+
+   
+//     gsap.to(".imagediv img",{
+//         scale:"1",
+//         // duration:0.6
+        
+//     })
+//     gsap.to(".imagediv img",{
+//         scale:"0%",
+//         delay:.6,
+//         ease:Power2
+//     })
+
+//     setTimeout(() => {
+//       div.remove();
+//     }, 1500);
+//   }, 500)
+// );
 
 
