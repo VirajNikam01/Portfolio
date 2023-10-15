@@ -73,7 +73,40 @@ gsap.to(logo,{
   }
 })
 
+//+++++++++++++++++++++++++++++++++++++++++++ autoTyping +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+const title = document.querySelector('.top-info h1 span')
+const wordList = ['Developer.', 'designer.']
+var wordIndex = 0;
+var characterIndex = 0;
+var reverseType = false
+let skipUpdate = 0;
+setInterval(()=>{
+    if (skipUpdate) {
+        skipUpdate--
+        return
+    }
+    if (!reverseType) {
+        skipUpdate = 2
+        title.innerText = title.innerText + wordList[wordIndex][characterIndex]
+    characterIndex++
 
+    }else{
+        title.innerText = title.innerText.slice(0, title.innerText.length-1)
+        characterIndex--
+    }
+    if (characterIndex === wordList[wordIndex].length ) {
+        skipUpdate = 8
+        reverseType = true
+    }
+    if (title.innerText.length === 0 && reverseType) {
+        reverseType = false
+        wordIndex++
+    }
+    if (wordIndex === wordList.length ) {
+        wordIndex = 0
+    }
+    
+}, 60)
 
 
 

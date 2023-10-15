@@ -276,7 +276,7 @@ a.active, a:hover{
     justify-content: space-around;
     height: 100vh;
     width: 100%;
-    padding: 30px;
+    
     padding-bottom: 30px;
     
 }
@@ -285,21 +285,35 @@ a.active, a:hover{
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+    flex-direction: column;
     flex: 1;
     height: 100%;
     padding: 80px 90px;
+    width: 100%;
 }
-#content img{
-    height: 40%;
+
+.top-info h1{
+    width: 400px;
+    text-align: left;
+    margin-inline: auto;
+    /* text-transform: uppercase; */
+    font-size: 50px;   
 }
-#content .info{
-    padding-left: 80px;
-    font-family: 'gilroy';
+.top-info h1 span{
+    color: rgb(84, 57, 40);
 }
-#content .info h1{
-    text-transform: uppercase;
-    font-size: 35px;   
-    font-family: "Moranga";
+.top-info h1 span::after{
+    content:  "";
+    height: 34px;
+    width: 1.8px;
+    background-color: rgb(58, 55, 55);
+    display: inline-block;
+    margin-left: 3px;
+}
+.info{
+    max-width: 950px;
+    margin-inline: auto;
+    text-align: center;
 }
 #history{
   display: flex;
@@ -318,18 +332,14 @@ a.active, a:hover{
 @media (max-width: 1000px){
     #page1{
         padding-top: 100px;
-        padding: 10px 20px;
         height: fit-content;
     }
-    #page1 #content{
-        flex-direction: column;
-        text-align: center;
-    }
-    #content img{
-        height: 150px;
+    .top-info h1{
+        font-size: 35px;
+        width: 300px;
     }
     #content .info{
-        padding-top: 10px;
+        padding-top: 50px;
         padding-left: 0px;
     }
     #page2{
@@ -351,6 +361,10 @@ a.active, a:hover{
 #page1{
     padding-top: 100px;
     width: 100%;  
+}
+.top-info h1{
+    width: 239px;
+    font-size: 30px;
 }
 #content{
     padding: 20px 10px;
